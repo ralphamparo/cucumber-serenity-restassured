@@ -17,7 +17,7 @@ Feature: Login
     Then login is successful
   Examples: Valid
   			|username|password|
-		  	|test-user|abc123|
+		  	|ralphamparo|Th@nos2016|
   	
     
     

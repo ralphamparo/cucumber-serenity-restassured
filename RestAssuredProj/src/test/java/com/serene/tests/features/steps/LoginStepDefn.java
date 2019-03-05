@@ -4,6 +4,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import net.serenitybdd.core.Serenity;
@@ -23,8 +25,8 @@ public class LoginStepDefn {
 	@Before
 	public void setup()
 	{
-    	RestAssured.baseURI = "https://r8alxaspi1.execute-api.ap-southeast-2.amazonaws.com";
-
+		RestAssured.reset();
+    	RestAssured.baseURI = "https://restcountries.eu/";
 	}
 	
 	@After
