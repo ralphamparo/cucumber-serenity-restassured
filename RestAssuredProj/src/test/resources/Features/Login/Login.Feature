@@ -15,7 +15,8 @@ Feature: Login
     Given I provide login credentials "<username>" and "<password>"
     When I send request to login
     Then login is successful
-  Examples: Valid
+ 
+ Examples: Valid
   			|username|password|
 		  	|ralphamparo|Th@nos2016|
   	
